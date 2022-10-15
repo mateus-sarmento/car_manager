@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/car_manager/static/css/main.634cc143.css",
-    "main.js": "/car_manager/static/js/main.1693cc8a.js",
+    "main.js": "/car_manager/static/js/main.cadf1d77.js",
     "static/js/787.dcb4caea.chunk.js": "/car_manager/static/js/787.dcb4caea.chunk.js",
     "static/media/histIcon.svg": "/car_manager/static/media/histIcon.c1c08d5b545e8288c237477f11c0b208.svg",
     "static/media/deleteIcon.svg": "/car_manager/static/media/deleteIcon.d05b3d238e3e9ea199c6eca031f7f78a.svg",
@@ -10,11 +10,11 @@
     "static/media/addIcon.svg": "/car_manager/static/media/addIcon.6bda6aa80575cbfaad271bcc622b1d86.svg",
     "index.html": "/car_manager/index.html",
     "main.634cc143.css.map": "/car_manager/static/css/main.634cc143.css.map",
-    "main.1693cc8a.js.map": "/car_manager/static/js/main.1693cc8a.js.map",
+    "main.cadf1d77.js.map": "/car_manager/static/js/main.cadf1d77.js.map",
     "787.dcb4caea.chunk.js.map": "/car_manager/static/js/787.dcb4caea.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.634cc143.css",
-    "static/js/main.1693cc8a.js"
+    "static/js/main.cadf1d77.js"
   ]
 }
