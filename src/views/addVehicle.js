@@ -53,7 +53,7 @@ class addVehicle extends React.Component {
         <header className="App-header">  
           <div className="Header-text"><p>Veículos</p></div>
         </header>
-        <form onSubmit={this.handleSubmit}>
+        <div onSubmit={this.handleSubmit}>
             <label className="Ano-text">
                 Ano:
             </label>
@@ -66,7 +66,7 @@ class addVehicle extends React.Component {
             <div className="Odo-inputbox">
               <input name="odoIn" type="text" value={this.state.odoIn} onChange={this.handleChange} placeholder='1234'/>
             </div>
-            <input type="submit" value="Submit" />
+            <button type="button" value="Submit" onClick={this.handleSubmit}>Submit</button>
             <label className="Modelo-text">
                 Modelo:
             </label>
@@ -79,7 +79,7 @@ class addVehicle extends React.Component {
             <div className="Marca-inputbox">
               <input name="marcaIn" type="text" value={this.state.marcaIn} onChange={this.handleChange} placeholder='Fiat'/>
             </div>        
-        </form>
+        </div>
         <footer className="App-footer">
             <p>footer</p>
         </footer>
