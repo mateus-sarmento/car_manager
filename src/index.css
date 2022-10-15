@@ -5,6 +5,19 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* align-items: center;
+  justify-items: center; */
+  display: flex;
+  background-color: rgba(133, 147, 228, 0.562);
+  position: relative;
+}
+
+#root {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 code {

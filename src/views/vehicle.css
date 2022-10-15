@@ -1,0 +1,20 @@
+.listOfCars {
+    position: absolute;
+    left: 0;
+    top:0;
+    padding-left: 10px;
+    padding-top: 60px;
+    font-size:small;
+}
+
+.carNames {
+    font-size: xx-large;
+    font-weight: 400;
+    text-align: left;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.imagesBox{
+    padding-left: 100px;
+}

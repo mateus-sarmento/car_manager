@@ -1,0 +1,71 @@
+.Marca-text {
+    position: absolute;
+    left: 0;
+    top:0;
+    padding-left: 10px;
+    padding-top: 100px;
+    font-size: x-large;
+    color: #969696;
+}
+
+.Marca-inputbox {
+    position: absolute;
+    left: 0;
+    top:0;
+    padding-left: 10px;
+    padding-top: 130px;
+}
+
+.Modelo-text {
+    position: absolute;
+    left: 0;
+    top:0;
+    padding-left: 10px;
+    padding-top: 150px;
+    font-size: x-large;
+    color: #969696;
+}
+
+.Modelo-inputbox {
+    position: absolute;
+    left: 0;
+    top:0;
+    padding-left: 10px;
+    padding-top: 180px;
+}
+
+.Odo-text {
+    position: absolute;
+    left: 0;
+    top:0;
+    padding-left: 10px;
+    padding-top: 200px;
+    font-size: x-large;
+    color: #969696;
+}
+
+.Odo-inputbox {
+    position: absolute;
+    left: 0;
+    top:0;
+    padding-left: 10px;
+    padding-top: 230px;
+}
+
+.Ano-text {
+    position: absolute;
+    left: 0;
+    top:0;
+    padding-left: 10px;
+    padding-top: 250px;
+    font-size: x-large;
+    color: #969696;
+}
+
+.Ano-inputbox {
+    position: absolute;
+    left: 0;
+    top:0;
+    padding-left: 10px;
+    padding-top: 280px;
+}
