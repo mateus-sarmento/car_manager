@@ -67,12 +67,12 @@ class vehicle extends React.Component {
           </Link>
         </div>
         <div className='histIcon-container'>
-          <Link to="/" >
+          <Link to="/car_manager" >
             <img src={histIcon} alt="Hist Icon" ></img>
           </Link>
         </div>
         <div className="carIcon-container">
-            <Link to="/" >
+            <Link to="/car_manager" >
               <img src={carIcon} alt="Car Icon" ></img>
             </Link>
         </div>
