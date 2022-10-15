@@ -8,13 +8,12 @@
 }
 
 .carNames {
-    font-size: xx-large;
+    font-size:0.8cm;
     font-weight: 400;
     text-align: left;
     font-style: normal;
-    font-weight: 400;
 }
 
 .imagesBox{
-    padding-left: 100px;
+    padding-left: 90px;
 }

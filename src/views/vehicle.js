@@ -30,14 +30,41 @@ const Cars = [
 ];
 class vehicle extends React.Component {
 
-  handleClick(event) {
-    // 👇️ refers to the image element
-    console.log(event.target);
+  // Constructor 
+  constructor(props) {
+    super(props);
 
-    console.log('Image clicked');
+    this.state = {
+        items: [],
+        DataisLoaded: false
+    };
+    this.handleDeleteClick = this.handleDeleteClick.bind(this);
+  }
+
+  componentDidMount() {
+    fetch(
+      "https://car-mng.herokuapp.com/vehicle")
+        .then((res) => res.json())
+        .then((json) => {
+            this.setState({
+                items: json,
+                DataisLoaded: true
+            });
+        })
+  }
+
+  async handleDeleteClick(event){
+    const deleteId = event.target.dataset.key;
+    console.log('https://car-mng.herokuapp.com/delOneVehicle/'+deleteId);
+    console.log('Click!!!!');
+    await fetch('https://car-mng.herokuapp.com/delOneVehicle/'+deleteId, { method: 'DELETE' })
+    this.componentDidMount();
   }
 
   render(){
+    const { DataisLoaded, items } = this.state;
+    if (!DataisLoaded) return <div>
+            <h1> Carregando... </h1> </div> ;
   return (
     <div className="App">
       <div className="App-body">
@@ -45,16 +72,14 @@ class vehicle extends React.Component {
           <div className="Header-text"><p>Veículos</p></div>
         </header>
         <ul className="listOfCars">
-          {Cars.map((data) => (
-            <tr key={data.marca}> 
+          {items.map((data) => (
+            <tr key={data._id} data-key={data._id} > 
               <td className="carNames">{data.marca} {data.modelo}</td>
               <td className="imagesBox">
                 <Link to="/" >
-                <img src={editIcon} alt="editIcon" ></img>
+                <img data-key={data._id} src={editIcon} alt="editIcon" ></img>
                 </Link>
-                <Link to="/addVehicle" >
-                  <img src={deleteIcon} alt="deleteIcon" ></img>
-                </Link>
+                <img src={deleteIcon} alt="deleteIcon" onClick={this.handleDeleteClick} role={"button"} data-key={data._id} ></img>
               </td>
             </tr>
           ))}
