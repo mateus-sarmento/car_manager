@@ -38,7 +38,7 @@ class addVehicle extends React.Component {
     console.log("click")
     // alert('A name was submitted: ' + this.state.marcaIn + ' ' + this.state.modeloIn);
     // event.preventDefault();
-    fetch('https://car-mng.herokuapp.com/vehicle/', {
+    fetch('https://car-mng-api-b.onrender.com/vehicle/', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

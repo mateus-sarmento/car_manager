@@ -43,7 +43,7 @@ class vehicle extends React.Component {
 
   componentDidMount() {
     fetch(
-      "https://car-mng.herokuapp.com/vehicle")
+      "https://car-mng-api-b.onrender.com/vehicle")
         .then((res) => res.json())
         .then((json) => {
             this.setState({
@@ -55,9 +55,9 @@ class vehicle extends React.Component {
 
   async handleDeleteClick(event){
     const deleteId = event.target.dataset.key;
-    console.log('https://car-mng.herokuapp.com/delOneVehicle/'+deleteId);
+    console.log('https://car-mng-api-b.onrender.com/delOneVehicle/'+deleteId);
     console.log('Click!!!!');
-    await fetch('https://car-mng.herokuapp.com/delOneVehicle/'+deleteId, { method: 'DELETE' })
+    await fetch('https://car-mng-api-b.onrender.com/delOneVehicle/'+deleteId, { method: 'DELETE' })
     this.componentDidMount();
   }
 
