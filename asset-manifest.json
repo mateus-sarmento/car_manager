@@ -1,20 +1,23 @@
 {
   "files": {
-    "main.css": "/car_manager/static/css/main.6795b5ec.css",
-    "main.js": "/car_manager/static/js/main.f83ca5c5.js",
+    "main.css": "/car_manager/static/css/main.8ba0bd86.css",
+    "main.js": "/car_manager/static/js/main.216c3e55.js",
     "static/js/787.dcb4caea.chunk.js": "/car_manager/static/js/787.dcb4caea.chunk.js",
+    "static/media/loginImg.svg": "/car_manager/static/media/loginImg.95413beaa6720927d3f381f8957b83a1.svg",
     "static/media/histIcon.svg": "/car_manager/static/media/histIcon.c1c08d5b545e8288c237477f11c0b208.svg",
     "static/media/deleteIcon.svg": "/car_manager/static/media/deleteIcon.d05b3d238e3e9ea199c6eca031f7f78a.svg",
     "static/media/carIcon.svg": "/car_manager/static/media/carIcon.d58270ba480fb55cca3705655874832c.svg",
+    "static/media/cadastrarIcon.svg": "/car_manager/static/media/cadastrarIcon.eedec941e7b0b4b67aecac280356b928.svg",
     "static/media/editIcon.svg": "/car_manager/static/media/editIcon.eb3026bfe5890a67705229703c02a150.svg",
+    "static/media/entrarIcon.svg": "/car_manager/static/media/entrarIcon.c05bfe7bb6973b6c347c8564a5f6f34b.svg",
     "static/media/addIcon.svg": "/car_manager/static/media/addIcon.6bda6aa80575cbfaad271bcc622b1d86.svg",
     "index.html": "/car_manager/index.html",
-    "main.6795b5ec.css.map": "/car_manager/static/css/main.6795b5ec.css.map",
-    "main.f83ca5c5.js.map": "/car_manager/static/js/main.f83ca5c5.js.map",
+    "main.8ba0bd86.css.map": "/car_manager/static/css/main.8ba0bd86.css.map",
+    "main.216c3e55.js.map": "/car_manager/static/js/main.216c3e55.js.map",
     "787.dcb4caea.chunk.js.map": "/car_manager/static/js/787.dcb4caea.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6795b5ec.css",
-    "static/js/main.f83ca5c5.js"
+    "static/css/main.8ba0bd86.css",
+    "static/js/main.216c3e55.js"
   ]
 }
