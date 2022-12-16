@@ -92,7 +92,7 @@ class vehicle extends React.Component {
           </Link>
         </div>
         <div className='histIcon-container'>
-          <Link to="/car_manager" >
+          <Link to="/login" >
             <img src={histIcon} alt="Hist Icon" ></img>
           </Link>
         </div>
