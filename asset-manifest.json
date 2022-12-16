@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/car_manager/static/css/main.8ba0bd86.css",
-    "main.js": "/car_manager/static/js/main.216c3e55.js",
+    "main.js": "/car_manager/static/js/main.e9e0a830.js",
     "static/js/787.dcb4caea.chunk.js": "/car_manager/static/js/787.dcb4caea.chunk.js",
     "static/media/loginImg.svg": "/car_manager/static/media/loginImg.95413beaa6720927d3f381f8957b83a1.svg",
     "static/media/histIcon.svg": "/car_manager/static/media/histIcon.c1c08d5b545e8288c237477f11c0b208.svg",
@@ -13,11 +13,11 @@
     "static/media/addIcon.svg": "/car_manager/static/media/addIcon.6bda6aa80575cbfaad271bcc622b1d86.svg",
     "index.html": "/car_manager/index.html",
     "main.8ba0bd86.css.map": "/car_manager/static/css/main.8ba0bd86.css.map",
-    "main.216c3e55.js.map": "/car_manager/static/js/main.216c3e55.js.map",
+    "main.e9e0a830.js.map": "/car_manager/static/js/main.e9e0a830.js.map",
     "787.dcb4caea.chunk.js.map": "/car_manager/static/js/787.dcb4caea.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8ba0bd86.css",
-    "static/js/main.216c3e55.js"
+    "static/js/main.e9e0a830.js"
   ]
 }
