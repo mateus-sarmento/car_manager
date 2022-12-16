@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useState, useContext } from 'react';
 import {Navigate } from "react-router-dom";
+import UserContext, { LoginContext } from '../UserProvider';
 import {registerUser, logUsuario} from '../apiCalls.js'
-import carIcon from "../carIcon.svg"
 import loginImg from "../loginImg.svg"
 import cadastrarIcon from "../cadastrarIcon.svg"
 import entrarIcon from "../entrarIcon.svg"
@@ -12,12 +12,15 @@ import './login.css';
 
 
 
-class Login extends React.Component {constructor(props) {
+class Login extends React.Component {
+    
+    constructor(props) {
     super(props);
+    
     this.state = {
         name: '',
         password: '',
-        userAuth: null
+        userAuthed: null
     }
 
     this.handleChange = this.handleChange.bind(this);
@@ -26,7 +29,7 @@ class Login extends React.Component {constructor(props) {
   }
 
 
-
+  
   handleChange(event) {
     const target = event.target;
     const value = target.value;
@@ -56,18 +59,24 @@ class Login extends React.Component {constructor(props) {
   logSubmit = async (event) => {
     // const navigate = useNavigate();
     event.preventDefault();
-    // const navigate = useNavigate();
+    const setUser = this.context
+    const newUser = { name: 'Joe', loggedIn: true }
+    // setUser(newUser)
+
+    const user = this.context
+    // alert(user.name)
     const userLogin = {
         name: this.state.name,
         password: this.state.password
     };
-    alert("yep");
     const { apiData, jsonResponse } = await logUsuario(this.state.name, this.state.password);
     alert(jsonResponse.msg);
 
     if (apiData.status === 200) {
-        this.setState({ ['userAuth']: true });
+        this.setState({ ['userAuthed']: true });
+        // this.context.setUser({ name: this.state.name, token: jsonResponse.token })
     }
+    // alert(this.context.user.name)
   }
 
   regSubmit = async (event) => {
@@ -86,10 +95,11 @@ class Login extends React.Component {constructor(props) {
   }
 
   render() {
-    let { name, password, userAuth } = this.state;
+    
+    let { name, password, userAuthed } = this.state;
   return (
     <div className="App">
-      {userAuth && (
+      {userAuthed && (
           <Navigate to="/car_manager" replace={true} />
         )}  
       <div className="App-body">
@@ -124,4 +134,7 @@ class Login extends React.Component {constructor(props) {
   );
   }
 }
+
+Login.contextType = UserContext
+
 export default Login;
