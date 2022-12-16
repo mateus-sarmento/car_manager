@@ -29,22 +29,20 @@ class addVehicle extends React.Component {
 
   }
   handleSubmit(event) {
-    const carPost = {
-      marca: this.state.marcaIn,
-      modelo: this.state.modeloIn, 
-      odo: this.state.odoIn,
-      ano: this.state.anoIn
+    const userLog = {
+      name: this.state.name,
+      password: this.state.password
     };
     console.log("click")
     // alert('A name was submitted: ' + this.state.marcaIn + ' ' + this.state.modeloIn);
     // event.preventDefault();
-    fetch('https://car-mng-api-b.onrender.com/vehicle/', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(carPost)
-    });
+    // fetch('https://car-mng-api-b.onrender.com/vehicle/', {
+    //   method: 'POST',
+    //   headers: {
+    //     'Content-Type': 'application/json',
+    //   },
+    //   body: JSON.stringify(carPost)
+    // });
   }
   render() {
   return (
